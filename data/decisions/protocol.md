@@ -129,7 +129,7 @@ The submission freeze should preserve at least the following:
 - second-pass recoding/adjudication sheet
 - coordinate/tier sensitivity outputs
 - appendix master table and paper-level summaries
-- staged paper-only export package in `paper_repo/`
+- public supplement and reproducibility package
 
 ## 11) Submission-Freeze Policy
 - The corpus is frozen only when `pending = 0` in the reconciled selection table.

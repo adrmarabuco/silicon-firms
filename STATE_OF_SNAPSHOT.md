@@ -1,22 +1,14 @@
-# State of Snapshot
+# Release State
 
-This export is a **staging package**, not yet the final public supplement.
+This repository is the public supplementary artifact package for the paper.
 
-## Why this note exists
+## Current Contents
 
-The project is currently between:
+- corpus metadata and selection records
+- decision logs for direct import, exclusion, snowballing, and recoding
+- generated evidence, sensitivity, underlying-model, and organizational analyses
+- scripts used to regenerate the public audit artifacts
 
-- an older reconciled legacy freeze used for provenance and audit continuity
-- a newer strengthened active corpus used for the next manuscript round
+## Maintenance Rule
 
-Those two states are both useful, but they should not be silently treated as identical.
-
-## Current rule
-
-- preserved legacy-freeze artifacts remain in the package for provenance
-- active strengthened-corpus artifacts remain in the package for current analysis
-- a future release-ready supplement should reconcile these into one clearly named manuscript freeze
-
-## Publication rule
-
-Do not present this package as a final supplement until the manuscript-facing freeze has been refreshed and the count lineage is fully aligned.
+Updates should be made through a controlled refresh from the private working repository so the public package stays synchronized with the manuscript and does not accumulate unrelated drafting artifacts.

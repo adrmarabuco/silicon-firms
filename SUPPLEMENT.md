@@ -1,12 +1,12 @@
 # Supplementary Audit Bundle
 
-This package is the intended public supplement target for the paper revision.
+This repository is the public supplementary audit bundle for the paper.
 
 ## What a reviewer should find here
 
-- the frozen corpus snapshot used in the manuscript
-- the reconciled selection ledger with `pending = 0`
-- the preserved snowballing freeze log
+- the corpus metadata used by the paper
+- the reconciled selection ledger
+- the snowballing and direct-import decision logs
 - the direct-import reconciliation log
 - the exclusion log
 - the second-pass recoding audit
@@ -14,22 +14,19 @@ This package is the intended public supplement target for the paper revision.
 - the appendix master table
 - the scripts required to regenerate those artifacts
 
-## Why this exists
+## Audit Map
 
-One review criticism was that the GitHub reference in the manuscript behaved like a placeholder rather than a real supplementary package. The future paper-only branch/repository should therefore expose this file and the surrounding structure directly, so the manuscript points to an actual audit bundle rather than to an unfinished location.
+- `papers.json`: corpus metadata and coding fields.
+- `data/selection.csv`: selection sheet.
+- `data/decisions/`: protocol, direct-import, exclusion, snowballing, and recoding logs.
+- `results/master_selection_table.csv`: reconciled selection table.
+- `results/master_table_appendix.tex`: appendix-ready paper-level crosswalk.
+- `results/evidence_coordinate_distribution.md`: evidence-coordinate distribution.
+- `results/tier_sensitivity_analysis.md`: tier robustness checks.
+- `results/underlying_model_*`: underlying-model reporting and release-type analyses.
+- `results/organizational_failure_modes.md`: organizational failure-mode synthesis.
+- `results/research_agenda_experiments.md`: falsifiable research agenda.
 
-## Snapshot honesty rule
+## Scope Boundary
 
-Do not publish this staging package as if every artifact already belongs to a single refreshed manuscript freeze.
-
-Until the next explicit freeze, the package may contain:
-
-- active strengthened-corpus artifacts
-- preserved legacy-freeze provenance artifacts
-
-That is acceptable in staging.
-It is not acceptable to present that mixed state as a fully reconciled public supplement.
-
-## Release rule
-
-Do not publish the branch until the contents of `paper_repo/` have been promoted to repository root and this file is reachable as a first-class landing page.
+This repository supports the paper's corpus and audit trail. It does not include the private writing workspace, reviewer-response planning files, or redistributable copies of all source PDFs.

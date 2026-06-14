@@ -1,9 +1,9 @@
 # Manuscript Separation
 
-The working LaTeX manuscript is intentionally not copied into `paper_repo/`.
+The working LaTeX manuscript is intentionally not included in this repository.
 
 Rationale:
 
 - avoid coupling the paper supplement repository to the draft-writing environment
-- keep the future paper repository focused on reproducibility artifacts
-- allow the manuscript to evolve in a separate branch or fork without polluting the audit package
+- keep this repository focused on reproducibility artifacts
+- avoid exposing private review notes, temporary builds, and drafting history

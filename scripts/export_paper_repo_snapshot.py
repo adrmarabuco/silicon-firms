@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """
-Export a publication-oriented snapshot into `paper_repo/`.
+Export the paper's public supplement package into `paper_repo/`.
 
-This staging area is designed for a future branch or repository split that
-contains the paper's data, scripts, and supplementary audit artifacts without
-mixing them with the working LaTeX environment of the broader survey repo.
+The exported package contains the corpus data, audit artifacts, and regeneration
+scripts that support the published paper, while keeping the working LaTeX and
+revision environment outside the public artifact repository.
 """
 
 from __future__ import annotations
@@ -86,54 +86,57 @@ def main() -> None:
         copied.append(rel_path)
 
     manifest = {
-        "snapshot_date": str(date.today()),
-        "purpose": "staging area for future paper-only branch/repository split",
-        "root": "paper_repo",
+        "release_date": str(date.today()),
+        "purpose": "public supplement and reproducibility package for the paper",
+        "repository_name": "silicon-firms",
         "copied_files": copied,
         "notes": [
             "This package intentionally excludes the working LaTeX manuscript files.",
-            "The goal is to preserve reproducible data, screening logs, audit artifacts, and the scripts that regenerate them.",
+            "The package preserves reproducible data, screening logs, audit artifacts, and the scripts that regenerate them.",
         ],
     }
 
     write_text(
         "README.md",
-        """# Paper Repo Snapshot
+        """# Silicon Firms
 
-This directory is a staging area for a future branch or repository split that will host the paper's reproducible assets without mixing them with the working LaTeX environment of the broader survey repository.
+Public supplement and reproducibility package for the paper on agentic and tool-assisted LLM trading systems.
 
-When promoted to the root of its own branch or repository, this README is intended to become the landing page referenced by the manuscript's supplementary-material statement. In other words: the future GitHub branch should resolve the old placeholder-link criticism by making this package itself the public supplement destination.
+This repository contains the data, audit artifacts, and regeneration scripts needed to inspect the paper's corpus construction, system classifications, evidence tiers, and supporting analyses. It is intentionally narrower than the private writing and revision workspace: the goal here is to make the paper's empirical basis inspectable, not to expose every draft, note, PDF, or internal planning file.
 
 ## What is included
 
-- frozen corpus data
-- search and screening logs
-- methodological audit artifacts
-- regeneration scripts for the selection and evidence analyses
-
-## Important current state
-
-This package is still a staging export.
-
-At the moment, the repository contains:
-
-- an active strengthened corpus that has moved beyond the older 66-paper freeze
-- preserved legacy-freeze provenance artifacts that still document the earlier reconciled snapshot
-
-That split is currently intentional and should remain explicit until the next manuscript freeze reconciles them into one release-ready snapshot.
+- corpus metadata in `papers.json`
+- search and screening records under `data/`
+- generated audit outputs under `results/`
+- scripts used to regenerate the public tables and analyses under `scripts/`
+- supplement navigation in `SUPPLEMENT.md` and `supplement/README.md`
 
 ## What is intentionally excluded
 
-- `main.tex` and the surrounding manuscript build environment
-- exploratory notes that are not part of the reproducible audit trail
-- historical working artifacts that are useful for development but not for the paper package
+- the working LaTeX manuscript environment
+- private review notes, chats, and planning documents
+- source PDFs that cannot be redistributed cleanly
+- temporary build files and exploratory artifacts
 
-## Recommended split workflow
+## How to read this repository
 
-1. Create a clean branch for the paper package export.
-2. Promote the contents of `paper_repo/` to the repository root of that branch.
-3. Keep manuscript sources in a separate fork or companion repository.
-4. Treat the files under `data/`, `results/`, and `scripts/` here as the frozen supplementary core for the paper.
+Start with:
+
+- `SUPPLEMENT.md` for the audit-bundle map
+- `papers.json` for the corpus-level metadata
+- `results/master_table_appendix.tex` for the paper-level classification crosswalk
+- `results/evidence_coordinate_distribution.md` for evidence-coordinate counts
+- `results/tier_sensitivity_analysis.md` for tier sensitivity
+- `results/underlying_model_reporting_protocol.md` for the underlying-model reporting protocol
+
+## Reproducibility
+
+The scripts in `scripts/` are included to document and regenerate the main public artifacts. They assume the repository layout preserved here.
+
+## Citation
+
+If you use this repository, cite the accompanying paper and refer to this repository as its public supplement.
 """,
     )
 
@@ -141,13 +144,13 @@ That split is currently intentional and should remain explicit until the next ma
         "SUPPLEMENT.md",
         """# Supplementary Audit Bundle
 
-This package is the intended public supplement target for the paper revision.
+This repository is the public supplementary audit bundle for the paper.
 
 ## What a reviewer should find here
 
-- the frozen corpus snapshot used in the manuscript
-- the reconciled selection ledger with `pending = 0`
-- the preserved snowballing freeze log
+- the corpus metadata used by the paper
+- the reconciled selection ledger
+- the snowballing and direct-import decision logs
 - the direct-import reconciliation log
 - the exclusion log
 - the second-pass recoding audit
@@ -155,42 +158,37 @@ This package is the intended public supplement target for the paper revision.
 - the appendix master table
 - the scripts required to regenerate those artifacts
 
-## Why this exists
+## Audit Map
 
-One review criticism was that the GitHub reference in the manuscript behaved like a placeholder rather than a real supplementary package. The future paper-only branch/repository should therefore expose this file and the surrounding structure directly, so the manuscript points to an actual audit bundle rather than to an unfinished location.
+- `papers.json`: corpus metadata and coding fields.
+- `data/selection.csv`: selection sheet.
+- `data/decisions/`: protocol, direct-import, exclusion, snowballing, and recoding logs.
+- `results/master_selection_table.csv`: reconciled selection table.
+- `results/master_table_appendix.tex`: appendix-ready paper-level crosswalk.
+- `results/evidence_coordinate_distribution.md`: evidence-coordinate distribution.
+- `results/tier_sensitivity_analysis.md`: tier robustness checks.
+- `results/underlying_model_*`: underlying-model reporting and release-type analyses.
+- `results/organizational_failure_modes.md`: organizational failure-mode synthesis.
+- `results/research_agenda_experiments.md`: falsifiable research agenda.
 
-## Snapshot honesty rule
+## Scope Boundary
 
-Do not publish this staging package as if every artifact already belongs to a single refreshed manuscript freeze.
-
-Until the next explicit freeze, the package may contain:
-
-- active strengthened-corpus artifacts
-- preserved legacy-freeze provenance artifacts
-
-That is acceptable in staging.
-It is not acceptable to present that mixed state as a fully reconciled public supplement.
-
-## Release rule
-
-Do not publish the branch until the contents of `paper_repo/` have been promoted to repository root and this file is reachable as a first-class landing page.
+This repository supports the paper's corpus and audit trail. It does not include the private writing workspace, reviewer-response planning files, or redistributable copies of all source PDFs.
 """,
     )
 
     write_text(
         "RELEASE_CHECKLIST.md",
-        """# Release Checklist
+        """# Public Package Checklist
 
-Use this checklist before turning `paper_repo/` into a standalone branch or repository.
+Use this checklist before each public update.
 
-- Promote the contents of `paper_repo/` to repository root.
 - Confirm `README.md` and `SUPPLEMENT.md` render correctly on GitHub.
 - Confirm `results/master_selection_table.csv` shows `pending = 0`.
 - Confirm the corpus snapshot named in the manuscript matches the counts in `papers.json`.
-- Confirm any legacy-freeze artifacts are clearly labeled as legacy provenance or replaced by refreshed freeze artifacts.
 - Confirm `results/master_table_appendix.tex` does not contain excluded records such as `A057`.
-- Confirm the manuscript no longer points to a placeholder GitHub URL.
-- Confirm the branch contains only paper data, scripts, and supplement artifacts, not the working LaTeX environment.
+- Confirm the repository contains only paper data, scripts, and supplement artifacts, not the private writing workspace.
+- Confirm the public repository remains synchronized with the approved supplement package.
 """,
     )
 
@@ -199,52 +197,36 @@ Use this checklist before turning `paper_repo/` into a standalone branch or repo
         """# Package Structure
 
 - `data/`
-  - corpus snapshot and preserved selection decisions
+  - corpus selection records and preserved selection decisions
 - `results/`
   - generated audit outputs used in the paper and supplement
 - `scripts/`
   - scripts required to rebuild the selection and evidence artifacts
+- `supplement/`
+  - compact guide to the audit bundle
 
 ## Separation policy
 
-This package is designed to stay close to a paper supplement / reproducibility repository.
-The manuscript text can live elsewhere, but should cite the artifacts preserved here.
-
-## Snapshot note
-
-Until the next explicit freeze, some files here may document:
-
-- the active strengthened corpus
-- older preserved provenance freezes
-
-That distinction should stay explicit rather than being flattened prematurely.
+This repository is the public supplement and reproducibility package. It excludes the private manuscript-drafting environment, exploratory notes, and temporary build files.
 """,
     )
 
     write_text(
         "STATE_OF_SNAPSHOT.md",
-        """# State of Snapshot
+        """# Release State
 
-This export is a **staging package**, not yet the final public supplement.
+This repository is the public supplementary artifact package for the paper.
 
-## Why this note exists
+## Current Contents
 
-The project is currently between:
+- corpus metadata and selection records
+- decision logs for direct import, exclusion, snowballing, and recoding
+- generated evidence, sensitivity, underlying-model, and organizational analyses
+- scripts used to regenerate the public audit artifacts
 
-- an older reconciled legacy freeze used for provenance and audit continuity
-- a newer strengthened active corpus used for the next manuscript round
+## Maintenance Rule
 
-Those two states are both useful, but they should not be silently treated as identical.
-
-## Current rule
-
-- preserved legacy-freeze artifacts remain in the package for provenance
-- active strengthened-corpus artifacts remain in the package for current analysis
-- a future release-ready supplement should reconcile these into one clearly named manuscript freeze
-
-## Publication rule
-
-Do not present this package as a final supplement until the manuscript-facing freeze has been refreshed and the count lineage is fully aligned.
+Updates should be made through a controlled refresh from the private working repository so the public package stays synchronized with the manuscript and does not accumulate unrelated drafting artifacts.
 """,
     )
 
@@ -252,13 +234,13 @@ Do not present this package as a final supplement until the manuscript-facing fr
         "manuscript/README.md",
         """# Manuscript Separation
 
-The working LaTeX manuscript is intentionally not copied into `paper_repo/`.
+The working LaTeX manuscript is intentionally not included in this repository.
 
 Rationale:
 
 - avoid coupling the paper supplement repository to the draft-writing environment
-- keep the future paper repository focused on reproducibility artifacts
-- allow the manuscript to evolve in a separate branch or fork without polluting the audit package
+- keep this repository focused on reproducibility artifacts
+- avoid exposing private review notes, temporary builds, and drafting history
 """,
     )
 
@@ -266,11 +248,11 @@ Rationale:
         "supplement/README.md",
         """# Supplement Guide
 
-This snapshot already contains the core files needed for an anonymized audit bundle:
+This directory points to the core files in the public audit bundle:
 
 - selection protocol
 - reconciled master selection table
-- frozen snowballing log
+- snowballing log
 - exclusion log
 - second-pass coding audit
 - evidence coordinate distribution
@@ -278,12 +260,12 @@ This snapshot already contains the core files needed for an anonymized audit bun
 - tier sensitivity analysis
 - appendix master table
 
-When the branch split happens, this directory can become the public-facing supplement landing page.
+The top-level `SUPPLEMENT.md` provides the full map.
 """,
     )
 
     write_text("MANIFEST.json", json.dumps(manifest, indent=2) + "\n")
-    print(f"Wrote staged paper package to {OUT.relative_to(ROOT)}")
+    print(f"Wrote public supplement package to {OUT.relative_to(ROOT)}")
 
 
 if __name__ == "__main__":

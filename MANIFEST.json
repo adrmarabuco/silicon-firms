@@ -1,7 +1,7 @@
 {
-  "snapshot_date": "2026-04-10",
-  "purpose": "staging area for future paper-only branch/repository split",
-  "root": "paper_repo",
+  "release_date": "2026-06-13",
+  "purpose": "public supplement and reproducibility package for the paper",
+  "repository_name": "silicon-firms",
   "copied_files": [
     "papers.json",
     "search.md",
@@ -44,6 +44,6 @@
   ],
   "notes": [
     "This package intentionally excludes the working LaTeX manuscript files.",
-    "The goal is to preserve reproducible data, screening logs, audit artifacts, and the scripts that regenerate them."
+    "The package preserves reproducible data, screening logs, audit artifacts, and the scripts that regenerate them."
   ]
 }

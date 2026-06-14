@@ -1,10 +1,10 @@
 # Supplement Guide
 
-This snapshot already contains the core files needed for an anonymized audit bundle:
+This directory points to the core files in the public audit bundle:
 
 - selection protocol
 - reconciled master selection table
-- frozen snowballing log
+- snowballing log
 - exclusion log
 - second-pass coding audit
 - evidence coordinate distribution
@@ -12,4 +12,4 @@ This snapshot already contains the core files needed for an anonymized audit bun
 - tier sensitivity analysis
 - appendix master table
 
-When the branch split happens, this directory can become the public-facing supplement landing page.
+The top-level `SUPPLEMENT.md` provides the full map.

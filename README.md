@@ -1,36 +1,39 @@
-# Paper Repo Snapshot
+# Silicon Firms
 
-This directory is a staging area for a future branch or repository split that will host the paper's reproducible assets without mixing them with the working LaTeX environment of the broader survey repository.
+Public supplement and reproducibility package for the paper on agentic and tool-assisted LLM trading systems.
 
-When promoted to the root of its own branch or repository, this README is intended to become the landing page referenced by the manuscript's supplementary-material statement. In other words: the future GitHub branch should resolve the old placeholder-link criticism by making this package itself the public supplement destination.
+This repository contains the data, audit artifacts, and regeneration scripts needed to inspect the paper's corpus construction, system classifications, evidence tiers, and supporting analyses. It is intentionally narrower than the private writing and revision workspace: the goal here is to make the paper's empirical basis inspectable, not to expose every draft, note, PDF, or internal planning file.
 
 ## What is included
 
-- frozen corpus data
-- search and screening logs
-- methodological audit artifacts
-- regeneration scripts for the selection and evidence analyses
-
-## Important current state
-
-This package is still a staging export.
-
-At the moment, the repository contains:
-
-- an active strengthened corpus that has moved beyond the older 66-paper freeze
-- preserved legacy-freeze provenance artifacts that still document the earlier reconciled snapshot
-
-That split is currently intentional and should remain explicit until the next manuscript freeze reconciles them into one release-ready snapshot.
+- corpus metadata in `papers.json`
+- search and screening records under `data/`
+- generated audit outputs under `results/`
+- scripts used to regenerate the public tables and analyses under `scripts/`
+- supplement navigation in `SUPPLEMENT.md` and `supplement/README.md`
 
 ## What is intentionally excluded
 
-- `main.tex` and the surrounding manuscript build environment
-- exploratory notes that are not part of the reproducible audit trail
-- historical working artifacts that are useful for development but not for the paper package
+- the working LaTeX manuscript environment
+- private review notes, chats, and planning documents
+- source PDFs that cannot be redistributed cleanly
+- temporary build files and exploratory artifacts
 
-## Recommended split workflow
+## How to read this repository
 
-1. Create a clean branch for the paper package export.
-2. Promote the contents of `paper_repo/` to the repository root of that branch.
-3. Keep manuscript sources in a separate fork or companion repository.
-4. Treat the files under `data/`, `results/`, and `scripts/` here as the frozen supplementary core for the paper.
+Start with:
+
+- `SUPPLEMENT.md` for the audit-bundle map
+- `papers.json` for the corpus-level metadata
+- `results/master_table_appendix.tex` for the paper-level classification crosswalk
+- `results/evidence_coordinate_distribution.md` for evidence-coordinate counts
+- `results/tier_sensitivity_analysis.md` for tier sensitivity
+- `results/underlying_model_reporting_protocol.md` for the underlying-model reporting protocol
+
+## Reproducibility
+
+The scripts in `scripts/` are included to document and regenerate the main public artifacts. They assume the repository layout preserved here.
+
+## Citation
+
+If you use this repository, cite the accompanying paper and refer to this repository as its public supplement.
