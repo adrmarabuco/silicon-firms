@@ -1,0 +1,39 @@
+{
+  "baseline": {
+    "tiers": {
+      "2": 23,
+      "1": 30,
+      "0": 28
+    },
+    "system_types": {
+      "N": 47,
+      "T": 12,
+      "A": 22
+    },
+    "tier_ceiling_max": 2
+  },
+  "tier_conservative": {
+    "tiers": {
+      "2": 22,
+      "1": 31,
+      "0": 28
+    },
+    "tier_ceiling_max": 2
+  },
+  "tier_liberal": {
+    "tiers": {
+      "2": 35,
+      "1": 18,
+      "0": 28
+    },
+    "tier_ceiling_max": 2
+  },
+  "structure_conservative": {
+    "system_types": {
+      "N": 47,
+      "T": 17,
+      "A": 17
+    }
+  },
+  "ceiling_robust": true
+}

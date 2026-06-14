@@ -1,0 +1,103 @@
+\begingroup
+\scriptsize
+\setlength{\LTleft}{0pt}
+\setlength{\LTright}{0pt}
+\begin{longtable}{p{0.7cm} p{1.9cm} p{3.85cm} p{1.7cm} p{0.65cm} p{0.55cm} p{1.2cm} p{1.8cm} p{2.0cm}}
+\caption{Corpus master table used in the survey. The table maps internal record IDs to a citation stub, computational archetype, N/T/A system type, evidence tier, a compact evidence signature, primary underlying model, and pipeline stages so that numerical claims in the main text can be audited directly. The evidence signature is ordered as $(o,b,f,x,g)$: temporal/out-of-sample discipline, baseline strength, friction or cost realism, execution realism, and governance or integrity evidence. Underlying model: ``n.s.'' = not specified; ``---'' = no explicit LLM underlying model or infrastructure-only item.}\label{tab:master-corpus}\\
+\toprule
+\textbf{ID} & \textbf{Citation} & \textbf{Paper} & \textbf{Archetype} & \textbf{Type} & \textbf{Tier} & \textbf{$z_i$} & \textbf{Underlying model} & \textbf{Stages} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{ID} & \textbf{Citation} & \textbf{Paper} & \textbf{Archetype} & \textbf{Type} & \textbf{Tier} & \textbf{$z_i$} & \textbf{Underlying model} & \textbf{Stages} \\
+\midrule
+\endhead
+\midrule
+\multicolumn{9}{r}{\emph{Continued on next page}}\\
+\midrule
+\endfoot
+\bottomrule
+\endlastfoot
+A001 & Ding et al. (2023) & Integrating Stock Features and Global Information via Large Language Models... & Context-decision & N & 2 & 11110 & LLM (n.s.) & signal, portfolio, execution \\
+A002 & Yin et al. (2026) & Complex forecasting and investment strategy optimization via chain-of-thoug... & Context-decision & N & 1 & 11110 & ChatGPT-4 & signal, portfolio \\
+A003 & Lima et al. (2025) & ChronosRL: embeddings-based reinforcement learning agent for financial trading & Context-decision & N & 1 & 01110 & Chronos (DL) & signal, portfolio, execution \\
+A004 & Hwang et al. (2025) & Decision-informed Neural Networks with Large Language Model Integration for... & Context-decision & N & 2 & 11110 & LLM (n.s.) & signal, portfolio \\
+A005 & Guo et al. (2025) & Large investment model & Context-decision & N & 0 & 00011 & Custom FM & signal, portfolio, execution, monitoring/governance \\
+A006 & Guo et al. (2025) & FinReasoner: A Lightweight LLM Framework for Financial Forecasting & Context-decision & N & 1 & 01110 & Distilled ens. & signal, portfolio, execution \\
+A007 & Lee et al. (2025) & LLM-Enhanced Black-Litterman Portfolio Optimization & Context-decision & N & 2 & 11110 & Multi-LLM & signal, portfolio, execution \\
+A008 & Mantshimuli et al. (2025) & Sentiment-Aware Portfolio Optimization: CVaR-Based Diversification With Dee... & Context-decision & N & 2 & 11110 & FinBERT+DDPG & signal, portfolio, execution \\
+A009 & Fu et al. (2025) & AI Oracle: A Blockchain-Powered Oracle for LLMs and AI Agents & Substrate & T & 1 & 11111 & LLM (n.s.) & monitoring/governance, execution \\
+A010 & Joshi (2025) & A Comprehensive Survey of AI Agent Frameworks and Their Applications in Fin... & Substrate & N & 0 & 00001 & LLM (n.s.) & monitoring/governance \\
+A011 & Noguer i Alonso et al. (2025) & Extending the FAIR Framework: Financial Agentic Systems & Substrate & N & 0 & 10111 & LLM (n.s.) & monitoring/governance, execution \\
+A012 & Aldridge et al. (2025) & Agentic Artificial Intelligence in Finance: A Comprehensive Survey & Substrate & N & 0 & 00001 & n.s. & monitoring/governance \\
+A013 & Siper et al. (2025) & ProFiT: Program Search for Financial Trading & Artifact search & A & 2 & 11111 & LLM (n.s.) & signal, execution, monitoring/governance \\
+A014 & Teng et al. (2026) & Synthetic Managerial Agents: A Multi-LLM Ensemble Framework for Computation... & Substrate & N & 0 & 01000 & GPT-4/4o/o1 & monitoring/governance \\
+A015 & Luo et al. (2025) & EFS: Evolutionary Factor Searching for Sparse Portfolio Optimization Using... & Artifact search & A & 1 & 11111 & GPT-4/4o/o1 & signal, portfolio \\
+A016 & Coriat et al. (2025) & HARLF: Hierarchical Reinforcement Learning and Lightweight LLM-Driven Senti... & Context-decision & N & 1 & 11110 & FinBERT+DDPG & signal, portfolio \\
+A017 & Darmanin et al. (2025) & Language Model Guided Reinforcement Learning in Quantitative Trading & Context-decision & N & 1 & 11011 & GPT-4/4o/o1 & signal, portfolio \\
+A018 & Chen et al. (2025) & Sentiment-Aware Mean-Variance Portfolio Optimization for Cryptocurrencies & Context-decision & N & 1 & 11010 & n.s. & signal, portfolio \\
+A019 & Xiong et al. (2025) & QuantAgent: Price-Driven Multi-Agent LLMs for High-Frequency Trading & Substrate & T & 1 & 11011 & LLM (n.s.) & signal, execution \\
+A020 & Hossain et al. (2025) & From Text to Returns: Using Large Language Models for Mutual Fund Portfolio... & Context-decision & N & 1 & 00000 & LLM (n.s.) & portfolio, monitoring/governance \\
+A021 & Kurban et al. (2026) & WebCryptoAgent: Agentic Crypto Trading with Web Informatics & Role-decomposed & A & 1 & 11111 & LLM (n.s.) & signal, portfolio, monitoring/governance \\
+A022 & Li et al. (2023) & TradingGPT: Multi-Agent System with Layered Memory and Distinct Characters... & Substrate & T & 0 & 10000 & LLM (n.s.) & signal, portfolio, execution \\
+A023 & Yu et al. (2025) & FinMem: A Performance-Enhanced LLM Trading Agent with Layered Memory and Ch... & Substrate & T & 1 & 11100 & GPT-4/4o/o1 & signal, portfolio \\
+A024 & Xiao et al. (2024) & TradingAgents: Multi-Agents LLM Financial Trading Framework & Role-decomposed & A & 1 & 11110 & LLM (n.s.) & signal, portfolio, execution, monitoring/governance \\
+A025 & Wang et al. (2025) & Alpha-GPT: Human-AI Interactive Alpha Mining for Quantitative Investment & Artifact search & A & 2 & 11110 & LLM (n.s.) & signal, portfolio \\
+A026 & Wang et al. (2024) & QuantAgent: Seeking Holy Grail in Trading by Self-Improving Large Language... & Artifact search & A & 2 & 11110 & LLM (n.s.) & signal, portfolio \\
+A027 & Wu et al. (2023) & BloombergGPT: A Large Language Model for Finance & Substrate & N & 0 & 11000 & BloombergGPT & signal \\
+A028 & Yang et al. (2023) & FinGPT: Open-Source Financial Large Language Models & Substrate & N & 0 & 11000 & LLM (n.s.) & signal \\
+A029 & Zhang et al. (2023) & Instruct-FinGPT: Financial Sentiment Analysis by Instruction Tuning of Gene... & Substrate & N & 0 & 01000 & FinBERT & signal \\
+A030 & Yuan et al. (2024) & Alpha-GPT 2.0: Human-in-the-Loop AI for Quantitative Investment & Artifact search & A & 0 & 00010 & LLM (n.s.) & signal, portfolio, monitoring/governance \\
+A031 & Menoita et al. (2025) & Evolving Financial Trading Strategies with Vectorial Genetic Programming & Substrate & N & 1 & 11110 & n.s. & signal, execution \\
+A032 & Shi et al. (2025) & Navigating the Alpha Jungle: An LLM-Powered MCTS Framework for Formulaic Fa... & Artifact search & A & 2 & 11110 & GPT-4/4o/o1 & signal, portfolio \\
+A033 & Xie et al. (2023) & PIXIU: A Large Language Model, Instruction Data and Evaluation Benchmark fo... & Substrate & N & 0 & 11001 & LLM (n.s.) & signal \\
+A034 & Yang et al. (2020) & Qlib: An AI-oriented Quantitative Investment Platform & Substrate & N & 0 & 01110 & n.s. & signal, portfolio, execution, monitoring/governance \\
+A035 & Shinn et al. (2023) & Reflexion: Language Agents with Verbal Reinforcement Learning & Substrate & N & 0 & 01000 & n.s. &  \\
+A036 & Lu et al. (2023) & BBT-Fin: Comprehensive Construction of Chinese Financial Domain Pre-trained... & Substrate & N & 0 & 01000 & BBT-FinT5 & signal \\
+A037 & Nie et al. (2024) & A Survey of Large Language Models for Financial Applications: Progress, Pro... & Substrate & N & 0 & 10001 & LLM (n.s.) & signal \\
+A038 & Yu et al. (2023) & Temporal Data Meets LLM: Explainable Financial Time Series Forecasting & Substrate & N & 0 & 11000 & GPT-4/4o/o1 & signal \\
+A039 & Zhang et al. (2020) & AutoAlpha: an Efficient Hierarchical Evolutionary Algorithm for Mining Alph... & Artifact search & N & 2 & 11110 & n.s. & signal, portfolio, execution \\
+A040 & Zhang et al. (2023) & XuanYuan 2.0: A Large Chinese Financial Chat Model with Hundreds of Billion... & Substrate & N & 0 & 00000 & BLOOM-176B & signal \\
+A041 & Li et al. (2024) & Can Large Language Models Mine Interpretable Financial Factors More Effecti... & Artifact search & A & 1 & 11111 & LLM (n.s.) & signal, portfolio \\
+A042 & Shi et al. (2025) & AlphaForge: A Framework to Mine and Dynamically Combine Formulaic Alpha Fac... & Artifact search & N & 1 & 11110 & n.s. & signal, portfolio \\
+A043 & Liu et al. (2022) & FinRL-Meta: Market Environments and Benchmarks for Data-Driven Financial Re... & Substrate & N & 1 & 11111 & n.s. & signal, portfolio, execution, monitoring/governance \\
+A044 & Wang et al. (2023) & FinVis-GPT: A Multimodal Large Language Model for Financial Chart Analysis & Substrate & N & 0 & 01010 & GPT-4/4o/o1 & signal \\
+A045 & Wang et al. (2024) & GPT-Signal: Generative AI for Semi-automated Feature Engineering in the Alp... & Artifact search & T & 1 & 11000 & GPT-4/4o/o1 & signal \\
+A046 & Bhatia et al. (2024) & FinTral: A Family of GPT-4 Level Multimodal Financial Large Language Models & Substrate & N & 0 & 01001 & Mistral-7B (SFT) & signal \\
+A047 & Lin et al. (2024) & Autonomous Sparse Mean-CVaR Portfolio Optimization & Context-decision & N & 2 & 11110 & n.s. & portfolio \\
+A048 & Zhao et al. (2025) & Revolutionizing Finance with LLMs: An Overview of Applications and Insights & Substrate & N & 0 & 01001 & GPT-4/4o/o1 & signal \\
+A049 & Abowath et al. (2025) & Advanced Deep Learning Techniques for Analyzing Earnings Call Transcripts:... & Substrate & N & 0 & 11000 & FinBERT & signal \\
+A050 & Fatemi et al. (2024) & FinVision: A Multi-Agent Framework for Stock Market Prediction & Role-decomposed & A & 1 & 11010 & GPT-4o-mini+o1 & signal, portfolio, execution, monitoring/governance \\
+A051 & Han et al. (2025) & FinSphere: a real-time stock analysis agent with instruction-tuned large la... & Substrate & T & 0 & 01000 & Qwen2-72B (SFT) & signal \\
+A052 & Gu et al. (2024) & Adaptive and Explainable Margin Trading via Large Language Models on Portfo... & Context-decision & N & 2 & 11110 & GPT-4/4o/o1 & signal, portfolio, execution, monitoring/governance \\
+A053 & Botunac et al. (2025) & Automated Trading Framework Using LLM-Driven Features and Deep Reinforcemen... & Context-decision & N & 2 & 11010 & FT transformer & signal, portfolio \\
+A054 & Saha et al. (2025) & Large Language Model Agents for Investment Management: Foundations, Benchma... & Substrate & N & 0 & 01000 & n.s. & signal, portfolio, monitoring/governance \\
+A055 & Gundimeda et al. (2025) & Language Model Orchestrated Financial Agents: An Open-Source Framework & Substrate & T & 0 & 00010 & Custom FM & signal, portfolio, monitoring/governance \\
+A056 & Schneider et al. (2025) & Stock portfolio selection based on risk appetite: Evidence from ChatGPT & Context-decision & N & 1 & 11000 & GPT-4/4o/o1 & portfolio \\
+A058 & Cheng et al. (2024) & Harnessing ChatGPT for predictive financial factor generation: A new fronti... & Artifact search & N & 1 & 11000 & GPT-4/4o/o1 & signal \\
+A059 & Li et al. (2024) & RA-CFGPT: Chinese financial assistant with retrieval-augmented large langua... & Substrate & T & 0 & 01001 & CFGPT-7B & signal, monitoring/governance \\
+A060 & Chiu et al. (2024) & Finance-specific large language models: Advancing sentiment analysis and re... & Substrate & N & 1 & 11000 & LLM (n.s.) & signal \\
+A061 & Chen et al. (2025) & A Two-Stage Framework for Stock Price Prediction: LLM-Based Forecasting wit... & Context-decision & N & 1 & 11000 & LLM (n.s.) & signal, portfolio \\
+A062 & Wang et al. (2025) & Parallel Market Environments for FinRL Contests & Substrate & N & 2 & 11110 & LLM (n.s.) & signal, execution \\
+A063 & Abe et al. (2024) & Leveraging Large Language Models for Institutional Portfolio Management: Pe... & Context-decision & N & 1 & 11000 & GPT-4/4o/o1 & signal, portfolio \\
+A064 & Wang et al. (2025) & FinRL Contests: Data‐Driven Financial Reinforcement Learning Agents for Sto... & Substrate & N & 2 & 11110 & LLM (n.s.) & signal, execution \\
+A065 & Tian et al. (2024) & Customized FinGPT Search Agents Using Foundation Models & Substrate & T & 0 & 01010 & GPT-4/4o/o1 & signal, monitoring/governance \\
+A066 & Tan et al. (2025) & Vision, Voice, and Text: Pioneering Zero-shot Multimodal LLMs for Sentiment... & Context-decision & N & 1 & 01000 & MM LLM (n.s.) & signal, portfolio \\
+A067 & Zhu et al. (2026) & FinMCP-Bench: Benchmarking LLM Agents for Real-World Financial Tool Use und... & Substrate & T & 0 & 01000 & Multi-LLM & signal, portfolio, execution, monitoring/governance \\
+A068 & Cheng et al. (2026) & Adaptive LLM-based multi-agent systems to enhance quantitative trading perf... & Substrate & A & 2 & 11111 & LLM (n.s.) & signal, portfolio, execution, monitoring/governance \\
+A069 & Kang et al. (2024) & Can Large Language Models Effectively Process and Execute Financial Trading... & Substrate & T & 0 & 01011 & LLM (n.s.) & execution, monitoring/governance \\
+A070 & Tang et al. (2025) & AlphaAgent: LLM-Driven Alpha Mining with Regularized Exploration to Counter... & Artifact search & A & 2 & 11111 & LLM (n.s.) & signal, portfolio, monitoring/governance \\
+A071 & Mantshimuli et al. (2026) & Toward a unified agentic framework for regime-aware portfolio optimization... & Substrate & A & 2 & 11111 & FinBERT & signal, portfolio, execution, monitoring/governance \\
+A072 & Duan et al. (2025) & FactorMAD: A Multi-Agent Debate Framework Based on Large Language Models fo... & Artifact search & A & 2 & 11111 & LLM (n.s.) & signal, portfolio, monitoring/governance \\
+A073 & Zhang et al. (2025) & LLM-Guided Evolutionary Strategy Generation for Quantitative Trading & Artifact search & A & 1 & 11011 & LLM (n.s.) & signal, portfolio, execution, monitoring/governance \\
+A074 & Rezaei et al. (2025) & GWise: A Graph-Structured Multi-Agent Framework for Service-Oriented and Ge... & Substrate & A & 1 & 11011 & LLM (n.s.) & signal, monitoring/governance \\
+A075 & Tian et al. (2025) & TradingGroup: A Multi-Agent Trading System with Self-Reflection and Data-Sy... & Role-decomposed & A & 2 & 11111 & LLM (n.s.) & signal, portfolio, execution, monitoring/governance \\
+A076 & Deng et al. (2025) & AlphaQuanter: An End-to-End Tool-Orchestrated Agentic Reinforcement Learnin... & Substrate & A & 2 & 11111 & LLM (n.s.) & signal, portfolio, execution, monitoring/governance \\
+A077 & Miyazaki et al. (2026) & Toward Expert Investment Teams: A Multi-Agent LLM System with Fine-Grained... & Role-decomposed & A & 1 & 11111 & n.s. & signal, portfolio, execution, monitoring/governance \\
+A078 & Li et al. (2025) & R\&D-Agent-Quant: A Multi-Agent Framework for Data-Centric Factors and Model... & Artifact search & A & 2 & 11111 & n.s. & signal, portfolio, monitoring/governance \\
+A079 & Kou et al. (2025) & Automate Strategy Finding with LLM in Quant Investment & Artifact search & A & 2 & 11111 & LLM (n.s.) & signal, portfolio, monitoring/governance \\
+A080 & Chen et al. (2026) & Adaptive Alpha Weighting with PPO: Enhancing Prompt-Based LLM-Generated Alp... & Artifact search & N & 2 & 11111 & n.s. & signal, portfolio \\
+A081 & Chen et al. (2025) & Multi-Agent LLM Framework for Formulaic Alpha Generation and Selection in Q... & Artifact search & A & 1 & 11011 & Multi-LLM & signal, portfolio, monitoring/governance \\
+A082 & Chen et al. (2025) & StockBench: Can LLM Agents Trade Stocks Profitably In Real-world Markets? & Substrate & T & 1 & 11111 & LLM (n.s.) & signal, portfolio, execution, monitoring/governance \\
+\end{longtable}
+\endgroup

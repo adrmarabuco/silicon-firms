@@ -1,0 +1,4 @@
+record_id,title,authors,year,venue,url,source_name,notes
+A019,QuantAgent: Price-Driven Multi-Agent LLMs for High-Frequency Trading,"Xiong, Z.; Li, Y.; Li, H.; et al.",2025,arXiv,arXiv:2509.09995v3,direct_import,"Imported from local paper extraction workflow before intake linkage was preserved."
+A022,TradingGPT: Multi-Agent System with Layered Memory and Distinct Characters for Enhanced Financial Trading Performance,"Xiao, Y.; et al.",2023,arXiv,arXiv:2309.03736v1,direct_import,"Imported from local paper extraction workflow before intake linkage was preserved."
+A067,FinMCP-Bench: Benchmarking LLM Agents for Real-World Financial Tool Use under the Model Context Protocol,"Zhu, J.; Tian, Y.; Li, B.; Wu, K.; Liang, Z.; Li, J.; Zhang, X.; Guo, L.; Chen, F.; Liu, Y.; Zhang, C.",2026,arXiv,https://arxiv.org/abs/2603.24943v1,direct_import,"Added during the April 2026 audit revision from a locally supplied PDF."

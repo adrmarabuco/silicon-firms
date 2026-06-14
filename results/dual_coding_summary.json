@@ -1,0 +1,397 @@
+{
+  "system_boundary": {
+    "task": "Frozen A vs non-A compared with second-pass recoding",
+    "metrics": {
+      "tp": 17,
+      "tn": 55,
+      "fp": 4,
+      "fn": 5,
+      "accuracy": 0.8888888888888888,
+      "precision": 0.8095238095238095,
+      "recall": 0.7727272727272727,
+      "kappa": 0.7151230949589682
+    },
+    "mismatches": [
+      {
+        "record_id": "A003",
+        "reviewer1": "N",
+        "reviewer2": "T"
+      },
+      {
+        "record_id": "A004",
+        "reviewer1": "N",
+        "reviewer2": "T"
+      },
+      {
+        "record_id": "A005",
+        "reviewer1": "N",
+        "reviewer2": "A"
+      },
+      {
+        "record_id": "A007",
+        "reviewer1": "N",
+        "reviewer2": "T"
+      },
+      {
+        "record_id": "A008",
+        "reviewer1": "N",
+        "reviewer2": "T"
+      },
+      {
+        "record_id": "A010",
+        "reviewer1": "N",
+        "reviewer2": "A"
+      },
+      {
+        "record_id": "A011",
+        "reviewer1": "N",
+        "reviewer2": "T"
+      },
+      {
+        "record_id": "A012",
+        "reviewer1": "N",
+        "reviewer2": "A"
+      },
+      {
+        "record_id": "A014",
+        "reviewer1": "N",
+        "reviewer2": "T"
+      },
+      {
+        "record_id": "A016",
+        "reviewer1": "N",
+        "reviewer2": "T"
+      },
+      {
+        "record_id": "A017",
+        "reviewer1": "N",
+        "reviewer2": "T"
+      },
+      {
+        "record_id": "A018",
+        "reviewer1": "N",
+        "reviewer2": "T"
+      },
+      {
+        "record_id": "A020",
+        "reviewer1": "N",
+        "reviewer2": "T"
+      },
+      {
+        "record_id": "A031",
+        "reviewer1": "N",
+        "reviewer2": "T"
+      },
+      {
+        "record_id": "A034",
+        "reviewer1": "N",
+        "reviewer2": "T"
+      },
+      {
+        "record_id": "A035",
+        "reviewer1": "N",
+        "reviewer2": "T"
+      },
+      {
+        "record_id": "A038",
+        "reviewer1": "N",
+        "reviewer2": "T"
+      },
+      {
+        "record_id": "A039",
+        "reviewer1": "N",
+        "reviewer2": "T"
+      },
+      {
+        "record_id": "A042",
+        "reviewer1": "N",
+        "reviewer2": "T"
+      },
+      {
+        "record_id": "A043",
+        "reviewer1": "N",
+        "reviewer2": "A"
+      },
+      {
+        "record_id": "A044",
+        "reviewer1": "N",
+        "reviewer2": "T"
+      },
+      {
+        "record_id": "A046",
+        "reviewer1": "N",
+        "reviewer2": "T"
+      },
+      {
+        "record_id": "A049",
+        "reviewer1": "N",
+        "reviewer2": "T"
+      },
+      {
+        "record_id": "A052",
+        "reviewer1": "N",
+        "reviewer2": "T"
+      },
+      {
+        "record_id": "A053",
+        "reviewer1": "N",
+        "reviewer2": "T"
+      },
+      {
+        "record_id": "A054",
+        "reviewer1": "N",
+        "reviewer2": "T"
+      },
+      {
+        "record_id": "A061",
+        "reviewer1": "N",
+        "reviewer2": "T"
+      },
+      {
+        "record_id": "A062",
+        "reviewer1": "N",
+        "reviewer2": "T"
+      },
+      {
+        "record_id": "A063",
+        "reviewer1": "N",
+        "reviewer2": "T"
+      },
+      {
+        "record_id": "A064",
+        "reviewer1": "N",
+        "reviewer2": "T"
+      },
+      {
+        "record_id": "A066",
+        "reviewer1": "N",
+        "reviewer2": "T"
+      },
+      {
+        "record_id": "A071",
+        "reviewer1": "A",
+        "reviewer2": "T"
+      },
+      {
+        "record_id": "A073",
+        "reviewer1": "A",
+        "reviewer2": "T"
+      },
+      {
+        "record_id": "A074",
+        "reviewer1": "A",
+        "reviewer2": "T"
+      },
+      {
+        "record_id": "A079",
+        "reviewer1": "A",
+        "reviewer2": "T"
+      },
+      {
+        "record_id": "A080",
+        "reviewer1": "N",
+        "reviewer2": "T"
+      },
+      {
+        "record_id": "A081",
+        "reviewer1": "A",
+        "reviewer2": "T"
+      }
+    ]
+  },
+  "tier_boundary": {
+    "task": "Frozen Tier2+ vs Tier<2 compared with second-pass recoding",
+    "metrics": {
+      "tp": 22,
+      "tn": 46,
+      "fp": 12,
+      "fn": 1,
+      "accuracy": 0.8395061728395061,
+      "precision": 0.6470588235294118,
+      "recall": 0.9565217391304348,
+      "kappa": 0.6550933508024892
+    },
+    "mismatches": [
+      {
+        "record_id": "A002",
+        "reviewer1": 1,
+        "reviewer2": 2
+      },
+      {
+        "record_id": "A009",
+        "reviewer1": 1,
+        "reviewer2": 2
+      },
+      {
+        "record_id": "A011",
+        "reviewer1": 0,
+        "reviewer2": 1
+      },
+      {
+        "record_id": "A014",
+        "reviewer1": 0,
+        "reviewer2": 1
+      },
+      {
+        "record_id": "A015",
+        "reviewer1": 1,
+        "reviewer2": 2
+      },
+      {
+        "record_id": "A016",
+        "reviewer1": 1,
+        "reviewer2": 2
+      },
+      {
+        "record_id": "A021",
+        "reviewer1": 1,
+        "reviewer2": 2
+      },
+      {
+        "record_id": "A022",
+        "reviewer1": 0,
+        "reviewer2": 1
+      },
+      {
+        "record_id": "A024",
+        "reviewer1": 1,
+        "reviewer2": 2
+      },
+      {
+        "record_id": "A027",
+        "reviewer1": 0,
+        "reviewer2": 1
+      },
+      {
+        "record_id": "A028",
+        "reviewer1": 0,
+        "reviewer2": 1
+      },
+      {
+        "record_id": "A029",
+        "reviewer1": 0,
+        "reviewer2": 1
+      },
+      {
+        "record_id": "A031",
+        "reviewer1": 1,
+        "reviewer2": 2
+      },
+      {
+        "record_id": "A033",
+        "reviewer1": 0,
+        "reviewer2": 1
+      },
+      {
+        "record_id": "A034",
+        "reviewer1": 0,
+        "reviewer2": 1
+      },
+      {
+        "record_id": "A035",
+        "reviewer1": 0,
+        "reviewer2": 1
+      },
+      {
+        "record_id": "A036",
+        "reviewer1": 0,
+        "reviewer2": 1
+      },
+      {
+        "record_id": "A038",
+        "reviewer1": 0,
+        "reviewer2": 1
+      },
+      {
+        "record_id": "A040",
+        "reviewer1": 0,
+        "reviewer2": 1
+      },
+      {
+        "record_id": "A041",
+        "reviewer1": 1,
+        "reviewer2": 2
+      },
+      {
+        "record_id": "A042",
+        "reviewer1": 1,
+        "reviewer2": 2
+      },
+      {
+        "record_id": "A043",
+        "reviewer1": 1,
+        "reviewer2": 2
+      },
+      {
+        "record_id": "A044",
+        "reviewer1": 0,
+        "reviewer2": 1
+      },
+      {
+        "record_id": "A046",
+        "reviewer1": 0,
+        "reviewer2": 1
+      },
+      {
+        "record_id": "A048",
+        "reviewer1": 0,
+        "reviewer2": 1
+      },
+      {
+        "record_id": "A049",
+        "reviewer1": 0,
+        "reviewer2": 1
+      },
+      {
+        "record_id": "A051",
+        "reviewer1": 0,
+        "reviewer2": 1
+      },
+      {
+        "record_id": "A053",
+        "reviewer1": 2,
+        "reviewer2": 1
+      },
+      {
+        "record_id": "A054",
+        "reviewer1": 0,
+        "reviewer2": 1
+      },
+      {
+        "record_id": "A055",
+        "reviewer1": 0,
+        "reviewer2": 1
+      },
+      {
+        "record_id": "A059",
+        "reviewer1": 0,
+        "reviewer2": 1
+      },
+      {
+        "record_id": "A065",
+        "reviewer1": 0,
+        "reviewer2": 1
+      },
+      {
+        "record_id": "A067",
+        "reviewer1": 0,
+        "reviewer2": 1
+      },
+      {
+        "record_id": "A069",
+        "reviewer1": 0,
+        "reviewer2": 1
+      },
+      {
+        "record_id": "A077",
+        "reviewer1": 1,
+        "reviewer2": 2
+      },
+      {
+        "record_id": "A082",
+        "reviewer1": 1,
+        "reviewer2": 2
+      }
+    ]
+  }
+}
