@@ -1,5 +1,5 @@
 {
-  "release_date": "2026-06-13",
+  "release_date": "2026-06-25",
   "purpose": "public supplement and reproducibility package for the paper",
   "repository_name": "silicon-firms",
   "copied_files": [
@@ -32,6 +32,10 @@
     "results/research_agenda_experiments.md",
     "results/tier_sensitivity_analysis.json",
     "results/tier_sensitivity_analysis.md",
+    "second_evaluation/README.md",
+    "second_evaluation/boundary_cases.csv",
+    "second_evaluation/boundary_audit.json",
+    "second_evaluation/boundary_audit.md",
     "scripts/build_master_selection_table.py",
     "scripts/finalize_snowball_round6.py",
     "scripts/build_revision_audit.py",

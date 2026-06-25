@@ -10,6 +10,7 @@ This repository contains the data, audit artifacts, and regeneration scripts nee
 - search and screening records under `data/`
 - generated audit outputs under `results/`
 - scripts used to regenerate the public tables and analyses under `scripts/`
+- independent second-evaluation artifacts under `second_evaluation/`
 - supplement navigation in `SUPPLEMENT.md` and `supplement/README.md`
 
 ## What is intentionally excluded
@@ -29,6 +30,7 @@ Start with:
 - `results/evidence_coordinate_distribution.md` for evidence-coordinate counts
 - `results/tier_sensitivity_analysis.md` for tier sensitivity
 - `results/underlying_model_reporting_protocol.md` for the underlying-model reporting protocol
+- `second_evaluation/boundary_audit.md` for the independent second evaluation of borderline cases
 
 ## Reproducibility
 

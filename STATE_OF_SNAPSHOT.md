@@ -7,6 +7,7 @@ This repository is the public supplementary artifact package for the paper.
 - corpus metadata and selection records
 - decision logs for direct import, exclusion, snowballing, and recoding
 - generated evidence, sensitivity, underlying-model, and organizational analyses
+- independent second-evaluation artifacts for predefined borderline cases
 - scripts used to regenerate the public audit artifacts
 
 ## Maintenance Rule
