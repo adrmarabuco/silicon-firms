@@ -7,7 +7,6 @@ This directory points to the core files in the public audit bundle:
 - snowballing log
 - exclusion log
 - second-pass coding audit
-- independent second evaluation of borderline cases
 - evidence coordinate distribution
 - underlying-model release-type audit
 - tier sensitivity analysis

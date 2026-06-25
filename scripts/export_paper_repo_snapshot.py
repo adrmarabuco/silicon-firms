@@ -48,10 +48,6 @@ FILES_TO_COPY = [
     "results/research_agenda_experiments.md",
     "results/tier_sensitivity_analysis.json",
     "results/tier_sensitivity_analysis.md",
-    "second_evaluation/README.md",
-    "second_evaluation/boundary_cases.csv",
-    "second_evaluation/boundary_audit.json",
-    "second_evaluation/boundary_audit.md",
     "scripts/build_master_selection_table.py",
     "scripts/finalize_snowball_round6.py",
     "scripts/build_revision_audit.py",
@@ -114,7 +110,6 @@ This repository contains the data, audit artifacts, and regeneration scripts nee
 - search and screening records under `data/`
 - generated audit outputs under `results/`
 - scripts used to regenerate the public tables and analyses under `scripts/`
-- independent second-evaluation artifacts under `second_evaluation/`
 - supplement navigation in `SUPPLEMENT.md` and `supplement/README.md`
 
 ## What is intentionally excluded
@@ -134,7 +129,6 @@ Start with:
 - `results/evidence_coordinate_distribution.md` for evidence-coordinate counts
 - `results/tier_sensitivity_analysis.md` for tier sensitivity
 - `results/underlying_model_reporting_protocol.md` for the underlying-model reporting protocol
-- `second_evaluation/boundary_audit.md` for the independent second evaluation of borderline cases
 
 ## Reproducibility
 
@@ -160,7 +154,6 @@ This repository is the public supplementary audit bundle for the paper.
 - the direct-import reconciliation log
 - the exclusion log
 - the second-pass recoding audit
-- the independent second evaluation of predefined borderline cases
 - the evidence-coordinate and sensitivity outputs
 - the appendix master table
 - the scripts required to regenerate those artifacts
@@ -175,7 +168,6 @@ This repository is the public supplementary audit bundle for the paper.
 - `results/evidence_coordinate_distribution.md`: evidence-coordinate distribution.
 - `results/tier_sensitivity_analysis.md`: tier robustness checks.
 - `results/underlying_model_*`: underlying-model reporting and release-type analyses.
-- `second_evaluation/`: independent second-evaluation artifacts for predefined borderline cases.
 - `results/organizational_failure_modes.md`: organizational failure-mode synthesis.
 - `results/research_agenda_experiments.md`: falsifiable research agenda.
 
@@ -230,7 +222,6 @@ This repository is the public supplementary artifact package for the paper.
 - corpus metadata and selection records
 - decision logs for direct import, exclusion, snowballing, and recoding
 - generated evidence, sensitivity, underlying-model, and organizational analyses
-- independent second-evaluation artifacts for predefined borderline cases
 - scripts used to regenerate the public audit artifacts
 
 ## Maintenance Rule
@@ -264,7 +255,6 @@ This directory points to the core files in the public audit bundle:
 - snowballing log
 - exclusion log
 - second-pass coding audit
-- independent second evaluation of borderline cases
 - evidence coordinate distribution
 - underlying-model release-type audit
 - tier sensitivity analysis
